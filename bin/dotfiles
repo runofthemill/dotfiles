@@ -32,16 +32,12 @@ sub_update () {
   brew upgrade
   npm install npm -g
   npm update -g
-  gem update --system
-  gem update
 }
 
 sub_clean () {
   brew cleanup
   brew cask cleanup
   npm cache clean
-  gem cleanup
-  rvm cleanup all
 }
 
 sub_macos () {

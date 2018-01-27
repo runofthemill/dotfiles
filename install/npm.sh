@@ -16,16 +16,20 @@ nvm alias default 8
 
 packages=(
   get-port-cli
+  ghwd
   gtop
   historie
+  lambda-pure-prompt
   nodemon
   npm
+  pm2
   release-it
   spot
   superstatic
   svgo
   tldr
   underscore-cli
+  vtop
 )
 
 npm install -g "${packages[@]}"

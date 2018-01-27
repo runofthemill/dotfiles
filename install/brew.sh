@@ -6,6 +6,7 @@ fi
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap Goles/battery
+brew tap homebrew/php
 brew update
 brew upgrade
 
@@ -16,32 +17,46 @@ apps=(
   bats
   battery
   coreutils
+  dark-mode
   diff-so-fancy
   dockutil
+  exa
   ffmpeg
   fasd
+  findutils
+  get-flash-videos
   gifsicle
   git
   git-extras
   gnu-sed --with-default-names
+  graphicsmagick
   grep --with-default-names
+  highlight
   hub
   httpie
   imagemagick
   jq
   lynx
-  mackup
+  # mackup
+  mariadb
   nano
   pandoc
   peco
+  php71 # from homebrew/php
+  pre-commit
   psgrep
   python
   shellcheck
   ssh-copy-id
+  tidy-html5
+  trash
   tree
   unar
+  webkit2png
   wget
   wifi-password
+  wp-cli # from homebrew/php
+  yarn
 )
 
 brew install "${apps[@]}"

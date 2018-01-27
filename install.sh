@@ -28,6 +28,7 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 . "$DOTFILES_DIR/install/bash.sh"
+. "$DOTFILES_DIR/install/zsh.sh"
 . "$DOTFILES_DIR/install/brew-cask.sh"
 . "$DOTFILES_DIR/install/gem.sh"
 

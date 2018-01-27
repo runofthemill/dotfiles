@@ -1,19 +1,27 @@
 [user]
-  name = Lars Kappert
-  email = lars@webpro.nl
+  name = Jeremy Miller
+  email = jeremyemiller@gmail.com
 
 [github]
   user = webpro
 
 [core]
   excludesfile = ~/.gitignore_global
-  editor = nano
+  editor = subl -n -w
   filemode = false
   trustctime = false
   autocrlf = input
   pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  # Pretty log output
+  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+  lastchange = log -p --follow -n 1
+
   amend = commit --amend --reuse-message=HEAD
   br = branch
   ci = commit
